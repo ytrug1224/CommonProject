@@ -1,0 +1,5 @@
+include ':appDiscovery'
+include ':appHome'
+include ':app'
+include ':libCommon'
+rootProject.name = "CommonProject"
