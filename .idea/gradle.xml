@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/appDiscovery" />
             <option value="$PROJECT_DIR$/appHome" />
             <option value="$PROJECT_DIR$/libCommon" />
+            <option value="$PROJECT_DIR$/libWebView" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

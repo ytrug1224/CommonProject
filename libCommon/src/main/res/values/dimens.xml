@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="vvwidget_alert_width" tools:ignore="ResourceName">290dp</dimen>
+
+    <dimen name="lib_common_midtext_max_width">200dp</dimen>
+    <dimen name="lib_common_leftprompticon_width">40dp</dimen>
+    <dimen name="lib_common_leftprompticon_height">40dp</dimen>
+    <dimen name="lib_common_leftprompttext_width">40dp</dimen>
+    <dimen name="lib_common_leftpromptview_margin_left">20</dimen>
+    <dimen name="lib_common_lefticon_margin_left">10</dimen>
+    <dimen name="lib_common_title_margin_left">40</dimen>
+
+    <dimen name="lib_common_font_size_small_8">8sp</dimen>
+    <dimen name="lib_common_font_size_small_12">12sp</dimen>
+    <dimen name="lib_common_font_size_normal_13">13sp</dimen>
+    <dimen name="lib_common_font_size_medium_14">14sp</dimen>
+    <dimen name="lib_common_font_size_medium_15">15sp</dimen>
+    <dimen name="lib_common_font_size_large_16">16sp</dimen>
+    <dimen name="lib_common_font_size_large_17">17sp</dimen>
+    <dimen name="lib_common_font_size_large_18">18sp</dimen>
+    <dimen name="lib_common_font_size_large_20">20sp</dimen>
+
+    <dimen name="lib_common_small_1dp">1dp</dimen>
+    <dimen name="lib_common_small_2dp">2dp</dimen>
+    <dimen name="lib_common_small_3dp">3dp</dimen>
+    <dimen name="lib_common_medium_4dp">4dp</dimen>
+    <dimen name="lib_common_medium_5dp">5dp</dimen>
+    <dimen name="lib_common_medium_8dp">8dp</dimen>
+    <dimen name="lib_common_medium_10dp">10dp</dimen>
+    <dimen name="lib_common_large_12dp">12dp</dimen>
+    <dimen name="lib_common_large_14dp">14dp</dimen>
+    <dimen name="lib_common_large_15dp">15dp</dimen>
+    <dimen name="lib_common_large_16dp">16dp</dimen>
+    <dimen name="lib_common_dp_17">17dp</dimen>
+    <dimen name="lib_common_dp_18">18dp</dimen>
+    <dimen name="lib_common_dp_19">19dp</dimen>
+    <dimen name="lib_common_dp_20">20dp</dimen>
+    <dimen name="lib_common_dp_22">22dp</dimen>
+    <dimen name="lib_common_dp_24">24dp</dimen>
+    <dimen name="lib_common_dp_25">25dp</dimen>
+    <dimen name="lib_common_dp_28">28dp</dimen>
+    <dimen name="lib_common_dp_30">30dp</dimen>
+    <dimen name="lib_common_dp_32">32dp</dimen>
+    <dimen name="lib_common_dp_36">36dp</dimen>
+    <dimen name="lib_common_dp_42">42dp</dimen>
+    <dimen name="lib_common_dp_44">44dp</dimen>
+    <dimen name="lib_common_dp_48">48dp</dimen>
+</resources>

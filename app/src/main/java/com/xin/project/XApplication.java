@@ -2,6 +2,8 @@ package com.xin.project;
 
 import android.app.Application;
 
+import androidx.multidex.BuildConfig;
+
 import com.alibaba.android.arouter.launcher.ARouter;
 
 public class XApplication extends Application {
@@ -10,6 +12,7 @@ public class XApplication extends Application {
     public void onCreate() {
         super.onCreate();
         initARouter(this);
+//        WebViewManager.initQbSdk(this);
     }
 
     /**

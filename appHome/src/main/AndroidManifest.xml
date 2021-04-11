@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.xin.apphome">
+    package="com.xin.app.home">
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application>
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name="com.xin.app.home.HomeActivity"></activity>
+        <activity android:name="com.xin.app.home.web.CallJavascriptActivity"></activity>
+        <activity android:name="com.xin.app.home.web.JavascriptCallNativeActivity"></activity>
     </application>
 
 </manifest>

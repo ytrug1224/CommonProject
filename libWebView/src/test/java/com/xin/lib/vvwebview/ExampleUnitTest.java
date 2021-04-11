@@ -1,4 +1,4 @@
-package com.xin.apphome;
+package com.xin.lib.vvwebview;
 
 import org.junit.Test;
 

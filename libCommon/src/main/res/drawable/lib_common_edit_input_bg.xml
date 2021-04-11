@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:color="@android:color/widget_edittext_dark"/>
+    <corners android:radius="50dp"></corners>
+
+    <padding android:left="@dimen/lib_common_large_16dp"
+        android:right="@dimen/lib_common_large_16dp"
+        android:top="@dimen/lib_common_medium_10dp"
+        android:bottom="@dimen/lib_common_medium_10dp"/>
+
+    <solid android:color="@color/lib_common_c_status_bar_bg"/>
+</shape>

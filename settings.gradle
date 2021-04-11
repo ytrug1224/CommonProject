@@ -1,5 +1,9 @@
 include ':appDiscovery'
 include ':appHome'
 include ':app'
+
 include ':libCommon'
+include ':libWebView'
+
+
 rootProject.name = "CommonProject"
