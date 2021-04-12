@@ -25,7 +25,7 @@
 
  ```
   <!-- 方式一：使用腾讯X5内核 -->
-  <com.xin.lib.dbridge.XWebView
+  <com.xin.lib.dbridge.DWebView
         android:id="@+id/js_call_native_webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />  
