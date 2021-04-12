@@ -4,20 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/base_mainHolder"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="42dp">
-
-        <ImageButton
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:src="@drawable/lib_common_white_left"
-            android:gravity="center_vertical"
-            />
-
-    </LinearLayout>
 
 
     <FrameLayout

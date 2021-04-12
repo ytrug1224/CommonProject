@@ -32,7 +32,7 @@
 
  ```
 
-## 2. DBridge 使用介绍
+## 2. JsBridge 使用介绍
 
    2.1 Js 调用 Android 使用方式
         Android端注册：
