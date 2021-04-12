@@ -6,13 +6,14 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.xin.app.home.R;
-import com.xin.lib.base.AbstractActivity;
 import com.xin.lib.dbridge.utils.OnReturnValue;
 import com.xin.lib.dbridge.webview.DWebView;
+import com.xin.lib.mvp.base.AbstractMvpActivity;
+import com.xin.lib.mvp.base.AbstractMvpPresenter;
 
 import org.json.JSONObject;
 
-public class CallJavascriptActivity extends AbstractActivity implements View.OnClickListener {
+public class CallJavascriptActivity extends AbstractMvpActivity implements View.OnClickListener {
 
     private DWebView mXWebView;
 
@@ -27,6 +28,11 @@ public class CallJavascriptActivity extends AbstractActivity implements View.OnC
     private Button hasMethodXX;
     private Button hasMethodAsynAddValue;
     private Button hasMethodAsynXX;
+
+    @Override
+    protected AbstractMvpPresenter createPresenter() {
+        return null;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -149,6 +155,21 @@ public class CallJavascriptActivity extends AbstractActivity implements View.OnC
                 }
             });
         }
+
+    }
+
+    @Override
+    public void showLoading(String tips) {
+
+    }
+
+    @Override
+    public void dismissLoading() {
+
+    }
+
+    @Override
+    public void showToast(String info) {
 
     }
 }

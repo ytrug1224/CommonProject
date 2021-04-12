@@ -4,20 +4,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.xin.lib.arouter.DiscoveryRouterConstants;
 import com.xin.lib.arouter.HomeRouterConstants;
 import com.xin.lib.arouter.MainRouterConstants;
 import com.xin.lib.constants.AppConstants;
+import com.xin.lib.mvp.base.AbstractMvpActivity;
+import com.xin.lib.mvp.base.AbstractMvpPresenter;
 
 @Route(path = MainRouterConstants.MAIN_ACTIVITY)
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AbstractMvpActivity implements View.OnClickListener {
 
     private Button mHomeBtn;
     private Button mDiscoveryBtn;
+
+    @Override
+    protected AbstractMvpPresenter createPresenter() {
+        return null;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,5 +56,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             default:
                 break;
         }
+    }
+
+    @Override
+    public void showLoading(String tips) {
+
+    }
+
+    @Override
+    public void dismissLoading() {
+
+    }
+
+    @Override
+    public void showToast(String info) {
+
     }
 }

@@ -5,10 +5,16 @@ import android.os.Bundle;
 import com.xin.app.home.R;
 import com.xin.app.home.web.jsinterface.JsApi;
 import com.xin.app.home.web.jsinterface.JsEchoApi;
-import com.xin.lib.base.AbstractActivity;
 import com.xin.lib.dbridge.webview.DWebView;
+import com.xin.lib.mvp.base.AbstractMvpActivity;
+import com.xin.lib.mvp.base.AbstractMvpPresenter;
 
-public class JavascriptCallNativeActivity extends AbstractActivity {
+public class JavascriptCallNativeActivity extends AbstractMvpActivity {
+
+    @Override
+    protected AbstractMvpPresenter createPresenter() {
+        return null;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,5 +27,20 @@ public class JavascriptCallNativeActivity extends AbstractActivity {
         webView.loadUrl("file:///android_asset/js-call-native.html");
         webView.addJavascriptObject(new JsApi(this), null);
         webView.addJavascriptObject(new JsEchoApi(this), "echo");
+    }
+
+    @Override
+    public void showLoading(String tips) {
+
+    }
+
+    @Override
+    public void dismissLoading() {
+
+    }
+
+    @Override
+    public void showToast(String info) {
+
     }
 }

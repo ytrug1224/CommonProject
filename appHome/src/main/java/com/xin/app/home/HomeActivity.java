@@ -10,14 +10,20 @@ import com.alibaba.android.arouter.facade.annotation.Route;
 import com.xin.app.home.web.CallJavascriptActivity;
 import com.xin.app.home.web.JavascriptCallNativeActivity;
 import com.xin.lib.arouter.HomeRouterConstants;
-import com.xin.lib.base.AbstractActivity;
 import com.xin.lib.constants.AppConstants;
+import com.xin.lib.mvp.base.AbstractMvpActivity;
+import com.xin.lib.mvp.base.AbstractMvpPresenter;
 
 @Route(path = HomeRouterConstants.HOME_ACTIVITY)
-public class HomeActivity extends AbstractActivity {
+public class HomeActivity extends AbstractMvpActivity {
 
     @Autowired(name = AppConstants.ARG1)
     String mHomeText;
+
+    @Override
+    protected AbstractMvpPresenter createPresenter() {
+        return null;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,5 +45,20 @@ public class HomeActivity extends AbstractActivity {
                 startActivity(new Intent(HomeActivity.this, JavascriptCallNativeActivity.class));
             }
         });
+    }
+
+    @Override
+    public void showLoading(String tips) {
+
+    }
+
+    @Override
+    public void dismissLoading() {
+
+    }
+
+    @Override
+    public void showToast(String info) {
+
     }
 }
